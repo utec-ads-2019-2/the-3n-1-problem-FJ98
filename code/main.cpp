@@ -18,10 +18,7 @@ int threeNPlusOne(int number){
 int main() {
     int inferior, superior;
 
-    for (int i = 0; i < 4; ++i) {
-        std::cin >> inferior >> superior
-    }
-    while (std::cin >> inferior >> superior) {
+    while (std::cin >> inferior >> superior, superior || inferior) {
         int start = inferior, stop = superior, maximo = -1;
 
         if (inferior > superior) { std::swap(inferior, superior); }
