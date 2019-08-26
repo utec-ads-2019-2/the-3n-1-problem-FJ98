@@ -17,8 +17,7 @@ int main() {
 }
 
 void orderInput(int& inferior, int& superior){
-    if (inferior > superior)
-        std::swap(inferior, superior);
+    if (inferior > superior) std::swap(inferior, superior);
 }
 
 int getMaxCycle(int inferior, int superior){
@@ -45,5 +44,6 @@ int threeNPlusOne(int number){
 }
 
 void print(int inferior, int superior, int maxCycle){
+    orderInput(inferior, superior);
     std::cout << inferior << " " << superior << " " << maxCycle << std::endl;
 }
